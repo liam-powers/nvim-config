@@ -15,9 +15,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- python virtual environment, useful for Molten (handling ipynbs)
-vim.g.python3_host_prog = vim.fn.expand("~/.config/nvim/nvim-venv/bin/python3")
-
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)

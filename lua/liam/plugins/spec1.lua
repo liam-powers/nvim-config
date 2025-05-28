@@ -121,6 +121,9 @@ return {
       })
 
       vim.lsp.enable('lua_ls')
+
+      -- astro js
+      vim.lsp.enable('astro')
     end
   },
 }

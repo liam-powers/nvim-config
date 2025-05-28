@@ -1,4 +1,4 @@
-<leader> is " " (space)
+- \<leader\> is " " (space)
 
 Handy nvim commands:
 - :Ex - Explore (also remapped to <leader>pf)
