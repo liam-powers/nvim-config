@@ -61,15 +61,14 @@ return {
     end
   },
   {
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {},
+  },
+  {
     "neovim/nvim-lspconfig",
     config = function()
       -- enable language servers here
-
-      -- deno prereq
-      vim.g.markdown_fenced_languages = { "ts=typescript" }
-      -- deno
-      vim.lsp.enable('denols')
-
       -- lua
       vim.lsp.config('lua_ls', {
         on_init = function(client)
